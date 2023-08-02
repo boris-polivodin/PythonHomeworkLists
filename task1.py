@@ -7,7 +7,6 @@ from numpy import arange
 
 start_num   = int(input("Введите значение первого элемента прогресии: "))
 step        = int(input("Введите шаг прогрессии: "))
-size       = int(input("Введите количество элементов прогрессии: "))
-
-progression = [arange(start_num, start_num + (size-1) * step + 1, step)]
+size        = int(input("Введите количество элементов прогрессии: "))
+progression = arange(start_num, start_num + (size-1) * step + 1, step).tolist()
 print(*progression)
